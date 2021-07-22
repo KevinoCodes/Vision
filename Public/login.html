@@ -78,10 +78,11 @@
                     <label for="inputPassword">Password</label>
                   </div>
 
-                  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" style="border-radius:7px !important; width: 460px;">Sign in</button>
-                  <a href="register.html"><p class="text-center" style="margin-top: 20px;">Register a New Account</p></a>
+                  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" style="border-radius:7px !important; width: 460px;" onclick="ArticlesTest()">Sign in</button>
+                  <a href="register.html"><p class="text-center" style="margin-top: 20px;">Register a New Account</p>
+                    <a href="articles.html"><p class="text-center" style="margin-top: 20px;">Development Access to Dashboard</p>
                   <hr class="my-4">
-                  <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit" style="border-radius:7px !important; width: 230px;"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+                  <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit" style="border-radius:7px !important; width: 230px;"><i class="fab fa-google mr-2"></i>Sign in with Google</button>
                   <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit" style="border-radius:7px !important;"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
                 </form>
               </div>
@@ -169,9 +170,10 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
-  
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="scripts/auth.js"></script>
 
 </body>
 

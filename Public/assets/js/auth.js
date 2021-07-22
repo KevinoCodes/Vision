@@ -14,4 +14,3 @@ function registerAccount() {
     });
     alert("hello")
   }
-  
