@@ -1645,3 +1645,21 @@ section {
 #footer .credits a {
   transition: 0.3s;
 }
+
+.navbar .navButton {
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.navbar .navButton:hover {
+  color: #fff;
+  background: #fd3800;
+  border-color: #ff4a17;
+}
+
+.navbar > ul > li > .navButton:before {
+  visibility: hidden;
+}

@@ -25,6 +25,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/login.css" rel="stylesheet">
@@ -67,24 +68,25 @@
             <div class="card card-signin my-5">
               <div class="card-body">
                 <h5 class="card-title text-center">Sign In</h5>
-                <form class="form-signin">
+                <div class="form-signin">
                   <div class="form-label-group">
-                    <input type="email" id="inputEmail" style="border-radius:7px !important" class="form-control" placeholder="Email address" required autofocus>
-                    <label for="inputEmail">Email address</label>
+                    <input type="email" id="email" style="border-radius:7px !important" class="form-control" placeholder="Email address" required autofocus>
+                    <label for="email">Email address</label>
                   </div>
-    
                   <div class="form-label-group">
-                    <input type="password" id="inputPassword" style="border-radius:7px !important" class="form-control" placeholder="Password" required>
-                    <label for="inputPassword">Password</label>
+                    <input type="password" id="password" style="border-radius:7px !important" class="form-control" placeholder="Password" required>
+                    <label for="password">Password</label>
                   </div>
 
-                  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" style="border-radius:7px !important; width: 460px;" onclick="ArticlesTest()">Sign in</button>
+                  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" style="border-radius:7px !important; width: 460px;" onclick="signin()" id="login">Sign in</button>
                   <a href="register.html"><p class="text-center" style="margin-top: 20px;">Register a New Account</p>
                     <a href="articles.html"><p class="text-center" style="margin-top: 20px;">Development Access to Dashboard</p>
                   <hr class="my-4">
-                  <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit" style="border-radius:7px !important; width: 230px;"><i class="fab fa-google mr-2"></i>Sign in with Google</button>
-                  <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit" style="border-radius:7px !important;"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-                </form>
+                    </div>
+                <div class="form-signin">
+                  <button class="btn btn-lg btn-google btn-block text-uppercase disabled" type="submit" style="border-radius:7px !important; width: 230px;"><i class="fab fa-google mr-2" onclick="continueGoogle()" id="google"></i> Signup with Google</button>
+                  <button class="btn btn-lg btn-facebook btn-block text-uppercase disabled" type="submit" style="border-radius:7px !important;"><i class="fab fa-facebook-f mr-2"></i> Signup with Facebook</button>
+                </div>
               </div>
             </div>
           </div>
@@ -157,23 +159,30 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
-      apiKey: "AIzaSyCYd2lBxFT0FrJux15reiLku9mHzlkd-Fc",
-      authDomain: "imarket-0.firebaseapp.com",
-      projectId: "imarket-0",
-      storageBucket: "imarket-0.appspot.com",
-      messagingSenderId: "1080424359700",
-      appId: "1:1080424359700:web:ada3c90ff9ef8cea714401"
+      apiKey: "AIzaSyA949elQQrSpvtRx11nykbrq32DzL-cXXk",
+      authDomain: "vision-f475e.firebaseapp.com",
+      projectId: "vision-f475e",
+      storageBucket: "vision-f475e.appspot.com",
+      messagingSenderId: "601627165123",
+      appId: "1:601627165123:web:45a93923c422c5ca3fbd76",
+      measurementId: "G-XRG5K0MZRS"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
 
+  <script src="assets/js/register.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="scripts/auth.js"></script>
 
 </body>
 
